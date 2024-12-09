@@ -1,0 +1,183 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.contact-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: white;
+  width: 200px; 
+  gap: 10px; 
+}
+
+.button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.messenger:hover {
+  background-color: #0056b3;
+  transform: translateY(-5px);
+}
+
+.whatsapp:hover {
+  background-color: #128C7E;
+  transform: rotate(5deg);
+}
+
+.gmail:hover {
+  background-color: #C0392B;
+  transform: scale(1.15);
+}
+
+.imo:hover {
+  background-color: #0056b3;
+  animation: pulse 1s infinite;
+}
+
+.phone-call:hover,
+.sms:hover {
+  background-color: #2980b9;
+  transform: skewX(-10deg);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.messenger {
+  background-color: #0084ff;
+}
+
+.whatsapp {
+  background-color: #25d366;
+}
+
+.gmail {
+  background-color: #D44638;
+}
+
+.imo {
+  background-color: #007bff;
+}
+
+.phone-call,
+.sms {
+  background-color: #34B7F1;
+}
+
+.tiktok {
+  background-color: #000000;
+}
+
+.tiktok:hover {
+  background-color: #000000;
+  transform: scale(1.1) rotate(15deg);
+}
+
+.youtube {
+  background-color: #FF0000;
+}
+
+.youtube:hover {
+  background-color: #c00;
+  transform: translateY(-5px);
+}
+
+.facebook {
+  background-color: #1877F2;
+}
+
+.facebook:hover {
+  background-color: #1565c0;
+  transform: scale(1.15);
+}
+
+/* Popup styles */
+.popup {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  background-color: white;
+  padding: 30px; 
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  width: 300px; 
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
+}
+
+.popup-button {
+  display: inline-flex; 
+  align-items: center; 
+  background-color: #1877F2;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  gap: 10px; 
+  width: 200px; /* Added width to match other buttons */
+}
+
+.popup-button:hover {
+  background-color: #1565c0;
+  transform: scale(1.05);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
